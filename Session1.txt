@@ -1,0 +1,57 @@
+Linux task step by step:-
+========================================================================
+step-1- 
+//CREATE DIRECTORY//
+mkdir "Abdelrahman Emad"
+cd "Abdelrahman Emad"
+pwd 
+
+step-2-
+//MAKE ANOTHER DIR AND CREATE MULTIPLE FILES//
+mkdir Documents 
+cd Documents
+touch file1.txt file2.txt file3.txt
+ls
+
+step-3-
+//Hide a File//
+"at Documents dir"
+touch .hidden_file
+ls -a
+
+step-4-
+//Write with Nano//
+nano file1.txt
+cat file1.txt
+
+
+step-5-
+//Create a Unique Directory//
+cd Documents
+mkdir ./-
+
+step-6-
+//Copy Directory//
+cd .. 
+cd ..
+cp -r Documents MY_Documents
+ls
+
+step-7-
+//Show Hidden Content//
+cd MY_Documents
+cat .hidden_file
+
+step-8-
+//Move Files//
+cd ..
+mv Documents/file2.txt Documents/file3.txt MY_Documents
+ls Documents
+ls MY_Documents
+
+step-9-
+//Remove Your Directory//
+cd ~
+rm -r"Abdelrahman Emad"
+ls
+========================================================================
