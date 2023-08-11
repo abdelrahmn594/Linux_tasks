@@ -1,1 +1,70 @@
- 
+ step 1:
+=========== 
+download task file 
+decompress task file:
+unzip Updated-Task-02.zip
+open README:
+cat Updated-Task-02/README.txt
+
+step 2:
+===========
+locate what you cant see:
+find /home/emadd/Downloads -type f -name ".*"
+".*" search for any file starts with "." which is hidden file that i cant see :)
+
+step 3:
+===========
+Extract .level-1.tar file:
+tar -xvf /home/emadd/Downloads/Updated-Task-02/.level-1.tar
+
+step 4:
+===========
+cat .level-1/README.txt 
+to see whats next in level-2
+
+step 5:
+===========
+check the type of compression: 
+file file .level-1/level-2
+
+step 6:
+===========
+rename file and add suitable suffix:
+mv .level-1/level-2 .level-1/level-2.gz
+
+step 7:
+===========
+decompress file:
+gzip -d .level-1/level-2.gz
+
+step 8:
+===========
+Extract the archive:
+tar -xvf .level-1/level-2
+
+step 9:
+===========
+search for another readme file for level 3:
+find . -type f -name "R*"
+then show the txt:
+cat ./level-2/README.txt
+
+step 10:
+===========
+locate "level-3":
+find . -type f -name "level-3"
+output:./level-2/gBT5u0vLT5/level-3
+
+step 11:
+===========
+check which type of compression:
+file ./level-2/gBT5u0vLT5/level-3
+bzip2 compressed data, block size = 900k
+
+step 12:
+===========
+rename file from ./level-2/gBT5u0vLT5/level-3 to ./level-2/gBT5u0vLT5/level-3.bz2:
+mv ./level-2/gBT5u0vLT5/level-3 ./level-2/gBT5u0vLT5/level-3.bz2
+decompress file:
+bzip2 -d ./level-2/gBT5u0vLT5/level-3.bz2
+DONE.
