@@ -1,1 +1,50 @@
+step 1:
+download task file and decompress it 
+gzip -d Updated-Task-02.zip
+open Read me file 
+cat README.txt
 
+step 2:
+find hidden file:
+find -type f -name".*"
+extract file:
+tar -xvf .level-1.tar
+cd .level-1
+cat README.txt
+
+step 3:
+check type of compression:
+file level-2
+rename file with suitable suffix:
+mv level-2 level-2.gz
+decompress it:
+ gzip -d level-2 
+ cd level-2
+ cat README.txt
+ 
+ step 4:
+ find level-3:
+ find -type f -name level-3
+ cd ./gBT5u0vLT5
+ check type of compression:
+ file level-3
+ rename:
+ mv level-3 level-3.bz2
+ decompress:
+ bzip2 -d level-3.bz2
+ cd level-3
+ find -type f -name "*.txt"
+ cat ./README.txt
+ find link
+ ls -l
+ file X6lkChFKsj
+ file WfUKyzFeEv
+ cat WfUKyzFeEv
+ 
+ step 5:
+ find 73 bytes file
+ find -size 73c
+ file xVMvVOKNW5
+ cat xVMvVOKNW5
+ 
+ now i can rest :)
