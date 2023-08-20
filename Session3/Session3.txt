@@ -1,1 +1,59 @@
-
+Task 3 steps:
+===============
+step-1-
+*Create a new user and a group*
+add user:
+sudo adduser osc
+add group:
+sudo addgroup osc_group
+add user to the group:
+sudo usermod -aG osc_group osc
+Grant sudo privileges to the user "osc":
+sudo usermod -aG sudo osc
+switch to osc user:
+su - osc
+password
+-------------------
+step-2-
+*Change the permissions of a file*
+make directory:
+mkdir ~/permission_practice
+change to the directory:
+cd ~/permission_practice
+Create public_file.txt with read and write permissions for everyone:
+touch public_file.txt
+chmod 666 public_file.txt
+Create executable_script.sh with specific permissions:
+touch executable_script.sh
+chmod 750 executable_script.sh
+Create private_file.txt with read and write permissions only for the owner:
+touch private_file.txt
+chmod 600 private_file.txt
+----------------------
+step-3-
+*Change the owner of a file*
+change the owner of "private_file.txt":
+sudo chown emadd private_file.txt
+Change the Group of "private_file.txt":
+sudo chgrp osc_group private_file.txt
+-----------------------
+step-4-
+Start a Background Process with "sleep 1000":
+sleep 1000 &
+Kill the Sleep Process Using Its PID:
+pgrep sleep
+kill 4697
+Open Vim and Suspend It:
+vim
+pkill -9 vim
+Verify Processes Are No Longer Running:
+pgrep sleep
+pgrep vim
+------------------------
+step-5-
+*Package management*
+install neofetch:
+sudo apt update
+sudo  apt install neofetch
+uninstall neofetch:
+sudo apt remove neofetch
